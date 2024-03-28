@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    padding: 1em 0;
+    background-color: rgba(246, 243, 243, 0.991);
+}
+
+nav li {
+    margin: 1rem 1rem;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: rgb(12, 96, 186);
+    text-transform: uppercase;
+
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.6em;
+}
+
+iframe {
+    width: 100%;
+}
+
+section {
+    margin: 1em 0em;
+}
+
+section .fm .col-lg-6 {
+    margin: 1em 0em;
+    box-shadow: 10px 10px 10px lightblue;
+}
+
+section .lm {
+    box-shadow: 10px 10px 10px lightblue;
+}
+
+.pp {
+    background-color: rgba(239, 239, 246, 0.991)
+}
+
+
+
+nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #707070;
+    font-weight: 700;
+    padding: 0.25em;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #c2cdd3;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (max-width:675px) {
+    .container-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+
+/* title */
+.title {
+    padding: 1em 0em;
+    text-align: center;
+}
+
+/* starting background image */
+.imgpa {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 2rem;
+}
+
+.imgp {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.container-imgd {
+    display: block;
+    width: 100%;
+    height: 30em;
+    background: rgba(0, 0, 0, 0.6) url('../satva/5.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    text-align: center;
+    box-shadow: 10px 10px 10px lightblue;
+}
+
+.container-imgdp {
+    position: relative;
+    top: 10em;
+}
+
+/* highlights */
+.container-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+
+.highlights {
+    width: 10em;
+    height: 12em;
+    /* border: 1px solid black; */
+    color: rgb(120, 120, 221);
+    box-shadow: 10px 10px 10px lightblue;
+    border-radius: 0;
+}
+
+
+/* amenities */
+.container-amenities {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.amenities {
+    width: 7em;
+    height: 7em;
+    box-shadow: 10px 10px 10px lightblue;
+    /* border:1px solid black; */
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* master and floor plan image */
+.container-plans {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5em 0em;
+
+}
+
+.plan {
+    width: 30em;
+    height: 30em;
+    box-shadow: 10px 10px 10px lightblue;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    color: black;
+}
+
+.w-100 {
+    /* border: 1px solid black; */
+    display: block;
+    height: 25em;
+}
+
+/* location */
+.container-location {
+    margin-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.container-locations {
+    box-shadow: 10px 10px 10px lightblue;
+    margin: 1em 0em;
+    width: 30em;
+    height: 20em;
+    /* border: 1px solid black; */
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.p {
+    object-fit: contain;
+    height: 100%;
+}
+
+
+.slide {
+    object-fit: cover;
+}
+
+.carousel {
+    margin: 2em 0em;
+}
+
+/* sliding images */
+.carousel-cell {
+    width: 28%;
+    height: 200px;
+    margin-right: 1em;
+    border-radius: 5px;
+}
+
+.container-footer {
+    background-color: darkblue;
+    color: white;
+    border-radius: 1em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer {
+    text-align: center;
+}
+
+
+.container-form {
+    margin: 1.5em 0em;
+}
+
+form {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px lightblue;
+    width: 100%;
+    max-width: 70%;
+    margin: auto;
+    display: block;
+    /* border: 1px solid black; */
+
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.container-form {
+    margin-top: 50px;
+    /* Adjust margin as needed */
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
