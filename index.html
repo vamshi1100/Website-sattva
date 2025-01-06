@@ -50,13 +50,23 @@
 
         .navbar-brand.toplogo img {
             width: 70px;
-            /* Adjust the width as needed */
             height: auto;
-            /* Maintain aspect ratio */
-            /* You can also specify height if needed */
+        }
 
+        .container-amenity {
+            padding: 50px 0;
         }
     </style>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16526634311"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16526634311');
+    </script>
 </head>
 
 <body>
@@ -65,7 +75,7 @@
         <div class="container">
             <span><a class="navbar-brand toplogo " href="#"><img src="../satva/logo.png "
                         class="rounded-circle"></a></span>
-            <a href="" class="navbar-brand">SATTAVA</a>
+            <a href="" class="navbar-brand">SATTVA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -94,10 +104,35 @@
         </div>
     </div>
 
+
+
+    <!-- About project -->
+    <div class="container container-amenity">
+        <div class="title text-center">
+            <h1>About Project - Sattva Misty Charm</h1>
+        </div>
+        <div class="amenity-details">
+            <p>Ready-to-occupy 1BHK, 2BHK, and 3BHK Apartments Off Kanakapura Road are available at Sattva Misty Charm
+                in Bangalore, just 5 minutes from Thalagattapura and Vajarahalli Metro Stations. The apartment complex
+                is nestled in a naturally undulating valley-like setting. Units are organized into "clusters," with
+                green, open courtyard-like areas in the center of each block where residents can gather and socialize.
+            </p>
+
+            <p><strong>Location:</strong> Situated Off Kanakapura Main Road on Holiday Village Road in South Bangalore,
+                Sattva Misty Charm offers convenient access to Mysore Road and is close to NICE Road.</p>
+
+            <p><strong>Amenities:</strong> Sattva Misty Charm boasts two acres of lush green open areas, a
+                state-of-the-art four-story clubhouse with an infinity pool, and a variety of sports amenities. Nearly
+                90,000 square feet of open space for gardens.</p>
+        </div>
+    </div>
+
+
+
     <!-- Highlights -->
     <div class="container container-highlights">
         <div class="container title">
-            <h1>project highlights</h1>
+            <h1 class="mt-0">project highlights</h1>
         </div>
         <div class="highlights">
             <i class="fa fa-location-arrow" aria-hidden="true"></i>
@@ -133,6 +168,7 @@
 
     <!-- sliding images -->
     <div class="container container-sliding">
+        <h1 style="text-align: center;" class="mt-5">Gallery</h1>
         <div class="carousel" data-flickity='{ "groupCells": true }'>
             <div class="carousel-cell"><img class="slide" src="../satva/5.jpg"></div>
             <div class="carousel-cell"><img class="slide" src="../satva/1.jpg"></div>
@@ -151,7 +187,7 @@
 
     <!-- pricing -->
     <div class="container">
-        <h1 style="text-align: center;">Pricing</h1>
+        <h1 style="text-align: center;" class="mt-5">Pricing</h1>
 
         <div class="row">
             <div class="col-lg-4 text-center pp p-2">
@@ -208,11 +244,13 @@
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" name="email" required />
+                                <input type="email" class="form-control" id="email"
+                                    pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" name="email" required />
                             </div>
                             <div class="form-group">
                                 <label for="phone">Phone</label>
-                                <input type="text" class="form-control" pattern="[6-9]{1}[0-9]{9}" name="phone" id="phone" required>
+                                <input type="text" class="form-control" pattern="[6-9]{1}[0-9]{9}" name="phone"
+                                    id="phone" required>
                             </div>
                             <div class="form-group">
                                 <label for="message">Message</label>
@@ -240,7 +278,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         function sendMessage() {
-            emailjs.init('MzB0DoOVUF2se8ar7')
+            emailjs.init('XFaG3Pz2XIefoXQrb')
             const btn = document.getElementById('button');
             const form = document.getElementById('enquiryForm');
             const successMessage = document.getElementById('success-message');
@@ -250,8 +288,8 @@
 
                 btn.value = 'Sending...';
 
-                const serviceID = 'service_66kaiwe';
-                const templateID = 'template_bqmqcs4';
+                const serviceID = 'service_qsto64y';
+                const templateID = 'template_4temive';
 
                 emailjs.sendForm(serviceID, templateID, this)
                     .then(() => {
@@ -279,7 +317,7 @@
 
     <!-- contact us -->
     <div class="container container-form" id="contactus">
-        <div class="offset-lg-2">
+        <div class="offset-lg-3">
             <div class="container title">
                 <h1>GET A CALL BACK </h1>
             </div>
@@ -326,14 +364,14 @@
 
             <script type="text/javascript">
                 document.addEventListener('DOMContentLoaded', function () {
-                    emailjs.init('MzB0DoOVUF2se8ar7')
+                    emailjs.init('XFaG3Pz2XIefoXQrb')
 
                     const form = document.getElementById('form');
                     const successMessage = document.getElementById('success-message');
                     const errorMessage = document.getElementById('error-message');
                     const successDiv = document.getElementById('success-div');
-                    const serviceID = 'service_66kaiwe';
-                    const templateID = 'template_bqmqcs4';
+                    const serviceID = 'service_qsto64y';
+                    const templateID = 'template_4temive';
 
                     form.addEventListener('submit', function (event) {
                         event.preventDefault();
@@ -504,6 +542,27 @@
                 purposes only. This is the website of authorized of Landowner share units of Sattva Misty Charm. We may
                 send updates to the mobile number/email id registered with us. All Rights Reserved.</p>
         </div>
+
+
+        <script>
+            window.addEventListener('load', function () {
+                if (window.location.pathname === "/") {
+                    gtag('event', 'conversion', { 'send_to': 'AW-16526634311/WhKyCITt0akZEMfawcg9' });
+                }
+            });
+        </script>
+        <script>
+            window.addEventListener('load', function () {
+                if (window.location.href.indexOf('/') != -1) {
+                    var timeInt = setInterval(function () {
+                        if (jQuery('.success-div').is(":visible")) {
+                            gtag('event', 'conversion', { 'send_to': 'AW-16526634311/X1iUCMzg9qgZEMfawcg9' });
+                            clearInterval(timeInt);
+                        }
+                    }, 3000);
+                }
+            });
+        </script>
     </footer>
 
 </body>
